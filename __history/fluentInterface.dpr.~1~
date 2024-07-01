@@ -1,0 +1,19 @@
+program fluentInterface;
+
+uses
+  Vcl.Forms,
+  uFluentInterface in 'C:\Users\manoe\Documents\Embarcadero\Studio\Projects\uFluentInterface.pas' {Form1},
+  uClasseComissao in 'C:\Users\manoe\Documents\Embarcadero\Studio\Projects\uClasseComissao.pas',
+  iInterfaceComissao in 'C:\Users\manoe\Documents\Embarcadero\Studio\Projects\iInterfaceComissao.pas',
+  uClasseCarro in 'C:\Users\manoe\Documents\Embarcadero\Studio\Projects\uClasseCarro.pas',
+  iInterfaceCarro in 'C:\Users\manoe\Documents\Embarcadero\Studio\Projects\iInterfaceCarro.pas';
+
+{$R *.res}
+
+begin
+  ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
